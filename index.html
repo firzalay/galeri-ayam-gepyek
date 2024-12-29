@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./build.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="container mx-auto p-4 lg:p-8 md:max-w-5xl lg:max-w-full">
+        <h1 class="text-2xl md:text-5xl font-inter font-bold text-center p-4 italic">Galeri Ayam Gepyek!</h1>
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 rounded-lg">
+            <div class="grid gap-4">
+                <img src="./img/img (1).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (10).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (11).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+            </div>
+            <div class="grid gap-4">
+                <img src="./img/img (5).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (4).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (6).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+            </div>
+            <div class="grid gap-4 ">
+                <img src="./img/img (2).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img_14.jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (12).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+            </div>
+            <div class="grid gap-4">
+                <img src="./img/img (7).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (9).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (6).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+            </div>
+            <div class="grid gap-4 ">
+                <img src="./img/img (41).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img_29.jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (42).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+            </div>
+            <div class="grid gap-4 ">
+                <img src="./img/img_25.jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img_27.jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (41).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+            </div>
+            <div class="grid gap-4 ">
+                <img src="./img/img_24.jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (42).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (41).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+            </div>
+            <div class="grid gap-4 ">
+                <img src="./img/img (41).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img_29.jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img (42).jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+            </div>
+            <div class="grid gap-4 ">
+                <img src="./img/img_21.jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img_15.jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+                <img src="./img/img_20.jpeg" alt="" class="h-auto max-w-full rounded-lg cursor-pointer" data-aos="fade-up" loading="lazy">
+            </div>
+        </div>
+
+        <div id="modal" class="hidden bg-black/70 fixed top-0 left-0 z-90 w-screen h-screen justify-center items-center">
+            <a href="javascript:void(0)" class="fixed z-100 top-6 right-8 text-white text-2xl font-bold"
+                onclick="closeModal()">X</a>
+            <img id="modal-img" class="max-h-[600px] object-cover" src="" alt="">
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="src/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
