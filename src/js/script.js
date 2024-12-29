@@ -13,11 +13,10 @@ let modalImg = document.getElementById("modal-img");
 
 function showModal(src) {
     modal.classList.remove('hidden');
-    modal.classList.add('flex');
     modalImg.src = src;
 }
 
 function closeModal() {
     modal.classList.add('hidden');
-    modal.classList.remove('flex');
+
 }
